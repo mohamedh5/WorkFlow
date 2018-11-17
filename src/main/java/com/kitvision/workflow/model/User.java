@@ -11,27 +11,50 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
-
+/**
+ * 
+ * @author mohamed
+ *
+ *	Basic user class.
+ */
 @Entity
 public class User {
 
+	/**
+	 * For db id;
+	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	
+	/**
+	 * The user name must be unique.
+	 */
 	@Column(nullable=false,unique=true)
 	private String username;
-	
+	/**
+	 * user password.
+	 */
 	@Column(nullable=false)
 	private String password;
-	
+	/**
+	 * This filed will hold the password again to match it against the Password field.
+	 * Will not be persisted. 
+	 */
 	@Transient
 	private String passwordRetry;
-	
-	private boolean active;
-	
+	/**
+	 * if the user active or disabled.
+	 * User must be active to login to the system;
+	 */
+	private boolean active = true;
+	/**
+	 * if the password expired or not.
+	 * Note will use if the user forgot the password.
+	 */
 	private boolean expired;
-	
+	/**
+	 * all the roles that the user has.
+	 */
 	@OneToMany(fetch=FetchType.LAZY,orphanRemoval=true,cascade=CascadeType.MERGE)
 	private Set<Role> roles;
 

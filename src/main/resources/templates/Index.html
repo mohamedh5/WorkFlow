@@ -1,0 +1,1408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KitVison Project Manager</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<div class="header" align="right">
+	<img src="logo.png" width="200" height="67" alt=""/>
+</div>
+
+  
+  <div id="Tabs1">
+	  <ul>
+	    <li><a href="#tabs-1">Project Initial Details</a></li>
+	    <li><a href="#tabs-2">Contracting Process</a></li>
+	    <li><a href="#tabs-3">Work In Progress</a></li>
+	    <li><a href="#tabs-4">Factory Delivery & Shipping</a></li>
+	    <li><a href="#tabs-5">Execution</a></li>
+	    <li><a href="#tabs-6">Handover</a></li>
+	    
+    </ul>
+	
+    
+    <!------------------------------------Project Initial Details------------------------->
+	 <div id="tabs-1">
+	 <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Project ID</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_id" placeholder="Project ID" class="form-control" type="number" value="">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Project Name</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_name" placeholder="Project Name" class="form-control" type="text">
+	</div>
+	</div>
+	
+	</div>	
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Starting Date</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_starting_date" type="date" class="form-control" placeholder="Starting Date">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Ending Date</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_ending_date" placeholder="Ending Date" class="form-control" type="date">
+	</div>
+	</div>
+	
+	</div>	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Project Status</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_status" placeholder="In Progress" class="form-control" type="text">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Project Total Cost</label>
+	<div class="col-md-2 inputGroupContainer">
+	<div class="input-group">
+	<input name="project_tcost" placeholder="Total Cost" class="form-control" type="number">
+	</div>
+	</div>
+	
+	</div>	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="0_submit_btn" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+    </div>
+	<!------------------------------------Contracting Process------------------------->
+    <div id="tabs-2">
+	     <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Company Name</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="company_name" placeholder="Company Name" class="form-control" type="text">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Company Address</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="company_address" placeholder="Company Address" class="form-control" type="text">
+	</div>
+	</div>
+	
+	</div>	
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Contact Person Name</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="contact_name" placeholder="Contact Person Name" class="form-control" type="text">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Contact Person Mobile</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="contact_mobile" placeholder="Contact Person Mobile" class="form-control" type="tel">
+	</div>
+	</div>
+	
+	</div>	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Commercial Registration</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="cr" type="file" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	<label class="col-md-2 control-label">Tax Card</label>
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input name="tax"  type="file" value="">
+	</div>
+	</div>
+	
+			 </div>	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="11_submit_btn" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+	
+	
+	
+	<form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Site Inspection</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="site_inspection_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="site_inspection_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="site_inspection_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Screen Specification</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="screen_specs_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="screen_specs_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="screen_specs_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Location Photos</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="location_photos_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="location_photos_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="location_photos_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Prespective Videos</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="prespective_videos_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="prespective_videos_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="prespective_videos_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="12_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+	
+	<form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">QsTech Offer</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="qstech_offer_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="qstech_offer_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="number" name="qstech_offer_screen_cost" value="" placeholder="Screen Cost" >
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="qstech_offer_date" value="" align="right">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Cabinet Drawing</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cabinet_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="file" name="cabinet_drawing_file" value="">
+	</div>
+	</div>
+	
+	
+	<label class="col-md-2 control-label">Main Power Cable Section</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_cable_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="power_cable_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="13_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+	
+	
+	<form class="well form-horizontal" action="" method="post">
+	
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Metal Chassis Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="text" name="metal_chassis_ec_cost" value="" placeholder="Metal Chassis Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	
+	<label class="col-md-2 control-label">Power Distribution Box Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="text" name="power_box_ec_cost" value="" placeholder="Power Dist. Box Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Cable Trays Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="text" name="cable_trays_ec_cost" value="" placeholder="Cable Trays Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	
+	<label class="col-md-2 control-label">Sub-Main Cables Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="sub_cables_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="text" name="sub_cables_ec_cost" value="" placeholder="Sub-Main Cables Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Shipping Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="shipping_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="text" name="shipping_ec_cost" value="" placeholder="Shipping Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	
+	<label class="col-md-2 control-label">Installation Estimated Cost</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="installation_ec_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="text" name="installation_ec_cost" value="" placeholder="Installation Est. Cost" class="form-control">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="14_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+	
+
+	
+<form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	
+	<label class="col-md-2 control-label">Kitvision Technical & Financial Offer</label>
+	<div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input  type="file" name="" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input  type="number" name="" value="" placeholder="Selling Price">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="" value="" align="right">
+	</div>
+	</div>
+	
+	</div>	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="15_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>		
+			
+					
+	
+</div>
+  <!------------------------------------Work In Progress------------------------->
+	  
+    <div id="tabs-3">
+	    <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Customer Advanced Payment</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cust_adv_payment_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input type="number" name="cust_adv_payment_amount" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cust_adv_payment_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Kickoff &amp; Put the order to Qstech</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="order_to_qstech_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="order_to_qstech_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="order_to_qstech_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Credit Period &amp; Installment</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="credit_period_installments_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="credit_period_installments_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="credit_period_installments_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Customer Contract</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cust_contract_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cust_contract_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cust_contract_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Payment Terms - Customer</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cust_payment_terms_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cust_payment_terms_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cust_payment_terms_date" value="">
+	</div>
+	</div>
+	
+	</div>	
+	
+		
+	
+  <div class="form-group">
+    <label class="col-md-2 control-label">Qstech Payment</label>
+    <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="qstech_payment_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-4 inputGroupContainer">
+	<div class="input-group">
+	<input type="number" name="qstech_payment_amount" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	<div class="col-md-5 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="qstech_payment_date" value="">
+	</div>
+	</div>
+	
+	</div>			
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="21_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+   
+   
+   <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Metal Chassis Drawings</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="metal_chassis_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="metal_chassis_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Power Distribution box Drawings</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="power_box_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="power_box_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="power_box_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Cable Trays Drawings</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cable_trays_drawing_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="22_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+   
+   
+   
+    </div>
+  <!------------------------------------Factory Delivery & Shipping------------------------->  
+    
+    <div id="tabs-4">
+	    <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Factory Delivery Date</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group"> 
+	<textarea></textarea>
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Shipping Cost</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="number">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Scanned Copy Of The Origibal Documents</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cable_trays_drawing_file" value="">
+	</div>
+	</div>
+	
+	<label class="col-md-2 control-label">Detailed Packing List & Installation Instructions</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cable_trays_drawing_file" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Form 4 &amp; SAIB Documentation Process</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group"> 
+	<input type="file">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Customs & Clearance</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="number">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Content Design Before &amp; After Seal</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group"> 
+	<input type="file">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="22_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+   
+    </div>
+    
+    <!------------------------------------Execution------------------------->
+    
+    <div id="tabs-5">
+	    <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Metal Chassis & Installation Contract</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="metal_chassis_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="metal_chassis_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+		
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Metal Chassis Execution</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="power_box_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="power_box_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="power_box_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>		
+	
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Final Site Inspection</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Installation Process</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Power Ditribution Box Installation</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Screen Testing Efficiency</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Installation Process</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Metal Chassis Guarantee</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="metal_chassis_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="metal_chassis_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Metal Chassis Design & Invoice</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="metal_chassis_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="metal_chassis_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="22_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+    </div>
+    
+    <!------------------------------------Handover------------------------->
+    
+    <div id="tabs-6">
+	    <form class="well form-horizontal" action="" method="post">
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Delivery Note</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="metal_chassis_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="metal_chassis_drawing_file" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="metal_chassis_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="metal_chassis_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="form-group">
+	  <label class="col-md-2 control-label">SLA Contract</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="cable_trays_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<input type="file" name="cable_trays_drawing_file" value="">
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="cable_trays_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="cable_trays_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+		
+	<div class="form-group">
+	  <label class="col-md-2 control-label">Software Training</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="power_box_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="power_box_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>	
+	
+		
+			
+<div class="form-group">
+	  <label class="col-md-2 control-label">Final Payment - Customer</label>
+	  <div class="col-md-1 inputGroupContainer" align="center">
+	<div class="input-group">
+	<input type="checkbox" name="power_box_drawing_checkbox" value="">
+	</div>
+	</div>
+	
+	
+	
+	<div class="col-md-3 inputGroupContainer">
+	<div class="input-group">
+	<textarea name="power_box_drawing_comment"></textarea>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-3 inputGroupContainer" align="left">
+	<div class="input-group">
+	<input type="date" name="power_box_drawing_date" value="">
+	</div>
+	</div>
+	
+	</div>			
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="form-group">
+		<label class="col-md-12 control-label">
+			<div class="col-md-12">
+				<button type="submit" name="22_submit_btn" value="" class="btn">Submit</button>
+			</div>
+		</label>
+	</div>
+	
+	</form>
+    </div>
+  </div>
+
+		
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

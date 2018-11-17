@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/registration}" th:object="${forAdminOnly}" method="post">
+	
+	username : <input type="text" th:field="*{username}" name="username"/>
+	Password : <input type="password" th:field="*{password}" name="password"/>
+	Password : <input type="password" th:field="*{passwordRetry}" name="passwordRetry"/>
+	
+</form>
+</body>
+</html>
