@@ -17,6 +17,7 @@ public class EstimatedCostTask extends Task {
 	@GeneratedValue(strategy = GenerationType.TABLE)
 	private int id;
 	private int estimatedCost;
+	
 	public int getId() {
 		return id;
 	}
