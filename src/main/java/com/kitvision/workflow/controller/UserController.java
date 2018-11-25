@@ -11,7 +11,7 @@ import com.kitvision.workflow.model.User;
  * 
  * @author mohamed
  *
- * This is a controller class, that will handle all lgin password forget actions.
+ * This is a controller class, that will handle all login password forget actions.
  */
 @Controller
 public class UserController {
